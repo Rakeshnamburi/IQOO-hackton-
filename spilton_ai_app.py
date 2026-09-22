@@ -79,7 +79,7 @@ with tab1:
     with col_right:
         st.subheader("Payment Status Breakdown")
         status_chart = df.groupby("Status")["Amount (₹)"].sum()
-        st.pie_chart(status_chart)
+        st.bar_chart(status_chart)
 
 with tab2:
     st.subheader("💬 Ask Spilton AI Anything About Your Finances")
